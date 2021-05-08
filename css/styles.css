@@ -388,8 +388,7 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.contract-label {
-  position: relative;
+.checkbox-label {
   display: flex;
   align-items: center;
   margin-top: 20px;
@@ -397,8 +396,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
 }
-.contract-icon {
-  position: absolute;
+.checkbox-icon {
   width: 16px;
   height: 15px;
   margin-right: 8px;
@@ -408,11 +406,16 @@ img {
       var(--transition-timing-function),
     border-color var(--transition-duration) var(--transition-timing-function);
 }
-.contract.checked + .contract-icon {
+.checkbox:checked + .checkbox-icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
+  background-image: url(../images/modal-check.svg);
+  background-size: contain;
 }
-.contract-link {
+/* .checkbox-icon-check {
+  margin-right: 8px;
+} */
+.checkbox-link {
   color: var(--accent-color);
 }
 /* #endregion Формы - form*/
